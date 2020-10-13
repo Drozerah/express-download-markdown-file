@@ -1,0 +1,28 @@
+{
+  "name": "express-download-markdown-file",
+  "version": "1.0.0",
+  "description": "Express.js API to download a markdown format file eating an entry point with data",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server.js",
+    "start:dev": "set DEBUG=APP:* & cross-env NODE_ENV=development nodemon server.js"
+  },
+  "keywords": [
+    "Express.js",
+    "API",
+    "Node.js",
+    "Download",
+    "markdown",
+    "file"
+  ],
+  "author": "Thomas G. aka Drozerah <drozerah@gmail.com> (https://github.com/Drozerah)",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "debug": "^4.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
