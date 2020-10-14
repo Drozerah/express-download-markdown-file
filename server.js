@@ -1,12 +1,23 @@
-const debug = require('debug')('APP:server')
+// Node core modules
+const path = require('path')
+// Modules
 const express = require('express')
 const app = express()
+const debug = require('debug')('APP:server')
+
+debug(__filename.replace(process.cwd(), ''))
+
+// import service
+const service = require('./service')
 
 // set server port
-app.set('PORT', process.env.PORT || 3000)
+app.set('PORT', process.env.PORT || 5000)
+// set static folder
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.send('Hello from Express.js')
+  const file = path.join(process.cwd(), 'index.html')
+  res.sendFile(file)
 })
 
 app.listen(app.get('PORT'), err => {

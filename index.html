@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>MD Download APP</title>
+</head>
+<body>
+  <h1>Download HTML5 textarea content to Markdown file from client side with JavaScript</h1>
+  <form id="editor">
+    <div class="editor__text">
+      <label for="textarea">Markdown Editor</label>
+      <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
+    </div>
+    <div class="editor__controls">
+      <div>
+        <div class="editor__controls--filename">
+          <input type="text" name="filename" id="filename" placeholder="Enter a file name">
+          <div>.md</div>
+          <button>Download Markdown File</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <script type="text/javascript" src="js/validator.min.js"></script>
+  <script type="text/javascript" src="js/post.js"></script>
+</body>
+</html>

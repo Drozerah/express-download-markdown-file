@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+h1{
+  font-size: 20px;
+}
+
+#editor, .editor__text{
+  display: flex;
+  flex-direction: column;
+}
+
+textarea, .editor__controls--filename {
+  margin: 20px 0px 0px 0px;
+}
+
+textarea{
+  padding: 10px;
+  max-width: 50%;
+}
+
+.editor__controls--filename {
+  display: flex;
+  justify-content: baseline;
+}
+
+.editor__controls--filename input{
+  padding-left: 10px;
+}
+
+button{
+  margin-left: 10px;
+}
+
+
