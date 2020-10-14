@@ -1,3 +1,8 @@
+// Copyright (c) 2020 Thomas G. drozerah@gmail.com
+// All rights reserved.
+// This source code is licensed under the MIT license found in the
+// LICENSE file in the root directory of this source tree.
+
 // Node core modules
 const path = require('path')
 // Modules
@@ -6,9 +11,6 @@ const app = express()
 const debug = require('debug')('APP:server')
 
 debug(__filename.replace(process.cwd(), ''))
-
-// import service
-const service = require('./service')
 
 // set server port
 app.set('PORT', process.env.PORT || 5000)

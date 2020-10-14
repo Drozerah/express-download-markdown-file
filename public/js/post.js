@@ -1,9 +1,7 @@
-
-console.log(validator.isAlphanumeric('test')) // !DEBUG
-
-/**
- * add event on form submit 
- */
+// Copyright (c) 2020 Thomas G. drozerah@gmail.com
+// All rights reserved.
+// This source code is licensed under the MIT license found in the
+// LICENSE file in the root directory of this source tree.
 
 const defaultText = 
 `# This is a Markdown title
@@ -16,14 +14,21 @@ This is a paragraph
 
 **This is a bold text**
 `
+
 document.forms[0].elements[0].value = defaultText
 
 
+/**
+ * add event on form submit 
+ */
 document.forms[0].elements[2].addEventListener('click', (e) => {
   e.preventDefault()
   download()
 })
 
+/**
+ * Handle file download 
+ */
 function download(){
   const fileName = document.forms[0].elements[1].value
   if(!fileName){
